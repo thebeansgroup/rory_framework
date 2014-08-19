@@ -3,6 +3,15 @@
 *:after {
   box-sizing: border-box;
 }
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}  
+
 /* Columns */
 
 $columns: 12;
@@ -15,7 +24,9 @@ $columns: 12;
   .col-#{$i}-m { 
   width: ((100% / $columns) * $i);
   @extend %float-styles;
-  padding: 2em;
+  @media screen and (max-width: 500px) {
+  float: none;
+  }
    }
   }
 }
@@ -28,6 +39,7 @@ $columns: 12;
 .container {
   width: $containerWidth;
   max-width: 900px;
+  margin-top: 1em;
 }
 
 
@@ -62,10 +74,13 @@ $columns: 12;
 
 /* Block Grid */
 
-$block-grid-elements: 12;
-$block-grid-default-spacing: rem-calc(20);
-$align-block-grid-to-grid: false; 
-$block-grid-media-queries: true;
+
+/* Rows */
+
+.row {
+
+}
+
 
 
 
@@ -101,156 +116,5 @@ $block-grid-media-queries: true;
 
 
 
-/* FlexBox */
-
-.row__flex {
-	display: -webkit-flex;
-	display: flex;
-	@media screen and (max-width: 599px) {
-	display: inline-block;
-	img{
-	width: 50px;
-	}
-	}
-	img {
-  float: left;
-  width: 100px;
-  margin: 0 15px 5px 0;
-  border: solid 1px #bbb;
-}
-
-}
-
-.initial {
-  -webkit-flex: initial;
-          flex: initial;
-  width: 15%;
-  min-width: 5%;
-}
-.none {
-  -webkit-flex: none;
-          flex: none;
-  width: 20%;
-}
-.flex1 {
-  -webkit-flex: 1;
-          flex: 1;
-}
-.flex2 {
-  -webkit-flex: 2;
-          flex: 2;
-}
 
 
-
-/* The gutter is fixed, even within nesting. That saves a lot of trouble. */
-$gutter: 15px;
-
-/* This is the mixin for the container. I want to find a way to avoid having to use containers in nested elements, if possible. */
-@mixin grid(){
-  list-style:none;
-  margin:0;                  
-  padding:0;                 
-  margin-left:-$gutter;
-  letter-spacing:-0.31em;
-  word-spacing:-0.43em;
-}
-
-/* Here is all the shared stuff of the columns. We pass the $x just for passing it to the other mixin inside. */
-@mixin column($x){
-  display:inline-block;         
-  padding-left:$gutter;
-  vertical-align:top;
-  letter-spacing:normal;
-  word-spacing:normal;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
-  @include col-width($x);
-}
-
-/* Here is the mixing that does the trick and calculate the size of the columns. It's separated so it won't rewrite everything in the media-queries. */
-@mixin col-width($x) {
-  width: $x * 100%;
-}
-
-body { margin: 0 auto; padding: $gutter }
-
-/* You need a container for the grid to work, and I don't really like it. If you happen to know a way around it, let me know.  */
-.page, .grid { @include grid(); }
-
-/* Mobile first, 'cause that's how I roll */ 
-.content1 { @include column(1);
-  .sub1 { @include column(1); }
-  .sub2 { @include column(1); }
-}
-.content2 { @include column(1);
-  .sub1 { @include column(1); }
-  .sub2 { @include column(1); }
-}
-.content3 { @include column(1);
-  .sub1 { @include column(1/2); }
-  .sub2 { @include column(1/2); }
-}
-
-/* Just for showing the nesting */
-$color: #BADA55;
-.block { margin: 0; margin-bottom: 12px; padding: 12px; color: #fff }
-.content1 .block {  background-color: $color }
-.content2 .block {  background-color: darken($color, 20%) }
-.content3 .block {  background-color: darken($color, 40%) }
- 
-@media only screen and (min-width: 481px) and (max-width: 1023px){
-    .content1 { @include col-width(1);              
-    .sub1 { @include col-width(1/2); }                         
-    .sub2 { @include col-width(1/2); }
-  }
-  .content2 { @include col-width(2/4);
-    .sub1 { @include col-width(1/2); }
-    .sub2 { @include col-width(1/2); }
-  }
-  .content3 { @include col-width(2/4);
-    .sub1 { @include col-width(2/4); }
-    .sub2 { @include col-width(2/4); }
-  }
-}
-
-@media only screen and (min-width: 1024px){
-  
-  body { max-width: 1300px }
-  
-  .content1 { @include col-width(2/4);
-    .sub1 { @include col-width(1/2); }
-    .sub2 { @include col-width(1/2); }
-  }
-  .content2 { @include col-width(1/4);
-    .sub1 { @include col-width(2/3); }
-    .sub2 { @include col-width(1/3); }
-  }
-  .content3 { @include col-width(1/4);
-    .sub1 { @include col-width(1/4); }
-    .sub2 { @include col-width(3/4); }
-  }
-}
-
-
-
-@mixin breakpoint($point) {
-  @if $point == large {
-    @media (min-width: 64.375em) { @content; }
-  }
-  @else if $point == medium {
-    @media (min-width: 50em) { @content; }
-  }
-  @else if $point == small {
-    @media (min-width: 37.5em)  { @content; }
-  }
-}
-
-
-.container {
-  width: 75%;
-  @include breakpoint(large) { width: 20%; }
-  @include breakpoint(medium) { width: 80%; }
-  @include breakpoint(small) { width: 95%; }
-}
