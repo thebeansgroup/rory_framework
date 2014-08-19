@@ -34,16 +34,38 @@ $linkColor: red;
 // Columns
 //===================================================================================
 
-$column-gutter: 20px !default;
+$column-gutter: 40px !default;
 
 
 //===================================================================================
 // Clearfix
 //===================================================================================
-.clearfix:after { 
+@mixin clearfix {
+   .clearfix:after { 
    content: "."; 
    visibility: hidden; 
    display: block; 
    height: 0; 
    clear: both;
 }  
+}
+
+
+//===================================================================================
+// Panel
+//===================================================================================
+
+.panel {
+	background: #bbb;
+}
+
+
+
+.l-inline {
+  display: inline-block;
+  verticle-align: top;
+}
+
+.middle {
+	text-align: center;
+}
