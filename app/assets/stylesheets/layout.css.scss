@@ -4,9 +4,8 @@
 // Container
 //===================================================================================
 .container {
-  width: $containerWidth;
-  max-width: 900px;
-  margin-top: 1em;
+  //max-width: 900px;
+  margin: 0 auto;
 }
 
 //===================================================================================
@@ -14,6 +13,7 @@
 //===================================================================================
 
 .row {
+  @include clearfix;
 
 }
 
@@ -23,15 +23,13 @@
 //===================================================================================
 
 $columns: 12;
-%float-styles {
-  float: left;
-}
+
 
 @mixin col-x-list {
   @for $i from 1 through $columns {
-  .col-#{$i}-m { 
+  .col-#{$i} { 
   width: ((100% / $columns) * $i);
-  @extend %float-styles;
+  float: left;
    }
   }
 }
@@ -46,9 +44,8 @@ $columns: 12;
 //===================================================================================
 
 .img-block {
-  @include clearfix;
   .img {
-  float: right;
+  float: left;
   margin:0 $column-gutter*2 0 0;
   }
 }

@@ -40,14 +40,10 @@ $column-gutter: 40px !default;
 //===================================================================================
 // Clearfix
 //===================================================================================
-@mixin clearfix {
-   .clearfix:after { 
-   content: "."; 
-   visibility: hidden; 
-   display: block; 
-   height: 0; 
-   clear: both;
-}  
+
+@mixin clearfix() { *zoom:1;
+  &:before, &:after { content: ""; display: block; }
+  &:after { clear: both; }
 }
 
 
