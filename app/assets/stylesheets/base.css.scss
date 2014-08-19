@@ -1,0 +1,27 @@
+/* navs */
+nav {
+	background: #ff9e78;
+	margin-top: 1em;
+	li{
+	float: right;
+	list-style: none;
+	margin-left: 1em;
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	}
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}   
+
+/* Fonts */
+
+h1 {
+	font-size: 2em;
+	color: #fb6225;
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+}
