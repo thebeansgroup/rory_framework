@@ -1,2 +1,18 @@
+/* Global variables for site wide changed */
+
 /* Container width */
-$containerWidth = 100%;
+$containerWidth: 100%;
+
+/* Base fonts */
+$baseFontSize: 15px;
+$baseFontColor: #fb6225;
+$baseFontFamily: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+
+/* Body */
+$bodyColor: none;
+
+/* Heading */
+$headerColor: #ccc;
+
+/* Links */
+$linkColor: red;
