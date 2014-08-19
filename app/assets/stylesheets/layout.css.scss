@@ -1,11 +1,6 @@
-/* Container */
+@import "settings";
 
-
-.container {
-	width: 100%;
-	max-width: 900px;
-}
-
+/* Columns */
 
 $columns: 12;
 %float-styles {
@@ -25,14 +20,57 @@ $columns: 12;
 @include col-x-list;
 
 
+/* Container */
+
+.container {
+  width: $containerWidth;
+  max-width: 900px;
+}
 
 
+/* Breakpoints */
 
-
-.column {
-  float:left;
-  padding: 2em;
+@mixin breakpoint ($point) {
+  @if $point == large {
+    @media(min-width: 64.37em){@content;}
+    }
+    @else if $point == medium {
+      @media (min-width: 50em){@content;}
+    }
+    @else if $point == small {
+      @media (min-width: 37.5em){@content;}
+    }
   }
+
+
+.page-wrap {
+  width: 75%;
+  @include breakpoint(large) {
+  width: 60%;
+  }
+  @include breakpoint(medium) {
+  width: 80%;
+  }
+  @include breakpoint(small) {
+  width: 95%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .l-inline {
@@ -41,9 +79,6 @@ $columns: 12;
 }
 
 
-.column-twelve {
-	margin: 0 auto;
-}
 
 
 .panel {
