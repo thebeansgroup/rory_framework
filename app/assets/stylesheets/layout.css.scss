@@ -1,5 +1,8 @@
 @import "settings";
 
+*:after {
+  box-sizing: border-box;
+}
 /* Columns */
 
 $columns: 12;
@@ -57,8 +60,12 @@ $columns: 12;
 }
 
 
+/* Block Grid */
 
-
+$block-grid-elements: 12;
+$block-grid-default-spacing: rem-calc(20);
+$align-block-grid-to-grid: false; 
+$block-grid-media-queries: true;
 
 
 
