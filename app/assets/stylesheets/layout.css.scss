@@ -1,18 +1,18 @@
 @import "settings";
 
-*:after {
-  box-sizing: border-box;
+
+//===================================================================================
+// Rows 
+//===================================================================================
+
+.row {
+
 }
 
-.clearfix:after { 
-   content: "."; 
-   visibility: hidden; 
-   display: block; 
-   height: 0; 
-   clear: both;
-}  
 
-/* Columns */
+//===================================================================================
+// Columns 
+//===================================================================================
 
 $columns: 12;
 %float-styles {
@@ -24,18 +24,14 @@ $columns: 12;
   .col-#{$i}-m { 
   width: ((100% / $columns) * $i);
   @extend %float-styles;
-  @media screen and (max-width: 500px) {
-  float: none;
-  }
    }
   }
 }
 
 @include col-x-list;
 
-
-/* Container */
-
+//===================================================================================
+// Container //===================================================================================
 .container {
   width: $containerWidth;
   max-width: 900px;
@@ -43,37 +39,16 @@ $columns: 12;
 }
 
 
-/* Breakpoints */
 
-@mixin breakpoint ($point) {
-  @if $point == large {
-    @media(min-width: 64.37em){@content;}
-    }
-    @else if $point == medium {
-      @media (min-width: 50em){@content;}
-    }
-    @else if $point == small {
-      @media (min-width: 37.5em){@content;}
-    }
-  }
-
-
-.page-wrap {
-  width: 75%;
-  @include breakpoint(large) {
-  width: 60%;
-  }
-  @include breakpoint(medium) {
-  width: 80%;
-  }
-  @include breakpoint(small) {
-  width: 95%;
+//===================================================================================
+// Block Grid
+//===================================================================================
+.img-block {
+  .img {
+  float: left;
+  margin:0 $column-gutter*2 0 0;
   }
 }
-
-
-/* Block Grid */
-
 
 /* Rows */
 
