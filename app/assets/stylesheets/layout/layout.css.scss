@@ -1,3 +1,5 @@
+@import "mixins";
+@import "settings";
 //===================================================================================
 // Container
 //===================================================================================
@@ -23,3 +25,34 @@
 @include col-x-list;
 
 
+//===================================================================================
+// Block grid 
+//===================================================================================
+
+/* make padding not affect element size */
+
+:before,
+:after {
+  -webkit-box-sizing: padding-box;
+     -moz-box-sizing: padding-box;
+          box-sizing: padding-box;
+}
+
+
+.col-1-3,
+.col-2-3 {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 10px;
+  img {
+    float: left;
+    }
+}
+
+.col-1-3 {
+  width: 33%;
+}
+
+.col-2-3 {
+  width: 66%;
+}
