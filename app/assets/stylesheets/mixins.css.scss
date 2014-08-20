@@ -19,3 +19,19 @@
   &:before, &:after { content: ""; display: block; }
   &:after { clear: both; }
 }
+
+//===================================================================================
+// Breakpoint
+//===================================================================================
+
+@mixin breakpoint ($point) {
+  @if $point == large {
+     @media(min-width: 700px){@content;}
+   }
+  @else if $point == medium {
+     @media (min-width: 401px)and (max-width: 699px){@content;}
+   }
+  @else if $point == small {
+     @media (max-width: 400px){@content;}
+   }
+}
