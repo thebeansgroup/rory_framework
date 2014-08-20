@@ -17,12 +17,12 @@
 .page-wrap {
   width: 75%;
   @include breakpoint(large) {
-  width: 60%;
+    width: 60%;
   }
   @include breakpoint(medium) {
-  width: 80%;
+    width: 80%;
   }
   @include breakpoint(small) {
-  width: 95%;
+    width: 100%;
   }
 }
