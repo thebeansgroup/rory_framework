@@ -1,31 +1,27 @@
-%container.panel.middle
-  %h1 Home
-%row.middle
-  .col-4-m
-    %p dsl
-  .col-4-m
-    %p dsl
-  .col-4-m
-    %p dsl
+.container
+  .row.middle
+    .col-4-m
+      %p dsl
+    .col-4-m
+      %p dsl
+    .col-4-m
+      %p dsl
 
-%row.middle
-  .col-12-m.panel
-    %p fsdg
+  .row.middle
+    .col-12-m.panel
+      %p fsdg
 
-.row   
-  .col-1-m
-    %p dslsdfhrdsfh
-  .col-1-m
-    %p dsldghdfgjsdj
-  .col-1-m
-    %p dsldgffjsdfj
-  .col-1-m
-    %p dsldsgjsdh
-  .col-1-m
-    %p dsldghsdfj
-  .col-1-m
-    %p dsldsgjhsdf
-  .col-2-m
-    %p dslsdfgjsdfj
-  .col-2-m
-    %p dsldfghsdfhjsdfhh
+  :css
+    img {
+      max-width: 100%;
+    }
+  .row   
+    - 12.times do |n|
+      .col-1-m
+        = image_tag "http://lorempixel.com/400/#{[*1..5].sample}00/sports/"
+        %p dslsdfhrdsfh
+  .row
+    - 12.times do |n|
+      .col-1-m
+        = image_tag "http://lorempixel.com/400/#{[*1..5].sample}00/sports/"
+        %p dslsdfhrdsfh

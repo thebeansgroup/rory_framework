@@ -5,7 +5,7 @@
 //===================================================================================
 .container {
   width: $containerWidth;
-  max-width: 900px;
+  max-width: 1200px;
   margin-top: 1em;
 }
 
@@ -14,7 +14,8 @@
 //===================================================================================
 
 .row {
-
+  &:before, &:after { content: ""; display: table; }
+  &:after { clear: both; }
 }
 
 
