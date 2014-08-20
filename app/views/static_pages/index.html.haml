@@ -1,4 +1,4 @@
-%container.panel.middle
+%container
   %h1 Home
 .row.middle
   .col-4
@@ -9,23 +9,19 @@
     %p dsl
 
 .row.middle
-  .col-12.panel
+  .col-12
     %p fsdg
 
-.row   
-  .col-1
-    %p dslsdfhrdsfh
-  .col-1
-    %p dsldghdfgjsdj
-  .col-1
-    %p dsldgffjsdfj
-  .col-1
-    %p dsldsgjsdh
-  .col-1
-    %p dsldghsdfj
-  .col-1
-    %p dsldsgjhsdf
-  .col-2
-    %p dslsdfgjsdfj
-  .col-2
-    %p dsldfghsdfhjsdfhh
+:css
+  img {
+    max-width: 100%;
+  }
+
+.row
+  - 12.times do |n|
+    .col-1
+      %img{:alt => "rails logo", :src => "/assets/railslogo.png"}/
+.row
+  - 12.times do |n|
+    .col-1
+      %img{:alt => "rails logo", :src => "/assets/railslogo.png"}/
