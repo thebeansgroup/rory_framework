@@ -9,12 +9,6 @@
     float: left;
    }
   }
-  .#{$point}-col-#{$columns} > li:nth-of-type(n){
-    clear: none;
-  }
-  .#{$point}-col-#{$columns} > li:nth-of-type(#{$columns}n+1){
-    clear: both;
-  }
 }
 
 //===================================================================================
