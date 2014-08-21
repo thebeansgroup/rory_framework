@@ -56,18 +56,14 @@
 // Small default block grid 
 //===================================================================================
 
-@include block-grid-("small", 2);
-@include block-grid-("small", 3);
-@include block-grid-("small", 4);
+@include block-grid-("small", #{i});
 
 //===================================================================================
 // Medium block grid 
 //===================================================================================
 
 @include breakpoint(medium) {
-  @include block-grid-("medium", 2);
-  @include block-grid-("medium", 3);
-  @include block-grid-("medium", 4);
+  @include block-grid-("medium", #{i});
 }
 
 //===================================================================================
@@ -75,7 +71,5 @@
 //===================================================================================
 
 @include breakpoint(large){
-  @include block-grid-("large", 2);
-  @include block-grid-("large", 3);
-  @include block-grid-("large", 4);
+  @include block-grid-("large", #{i});
 }
