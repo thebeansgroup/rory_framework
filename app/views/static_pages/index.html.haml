@@ -1,16 +1,13 @@
 .container
   %h1 Home
-.row.middle
-  .col-4
-    %p dsl
-  .col-4
-    %p dsl
-  .col-4
-    %p dsl
+.row
+  - 12.times do |n|
+    .large-col-1.small-col-6
+      %img{:alt => "rails logo", :src => "/assets/railslogo.png"}/
 
-.row.middle
+.row
   .col-12
-    %p fsdg
+    %img{:alt => "rails logo", :src => "/assets/railslogo.png"}/
 
 :css
   img {
