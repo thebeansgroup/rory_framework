@@ -2,20 +2,19 @@
 // Column 12
 //===================================================================================
 
-@mixin col-($point, $i){
+@mixin col-($point){
   @for $i from 1 through $columns {
   .#{$point}-col-#{$i} { 
     width: ((100% / $columns) * $i);
     float: left;
    }
   }
-  .#{$point}-col-#{$i} > li:nth-of-type(n){
+  .#{$point}-col-#{$columns} > li:nth-of-type(n){
     clear: none;
   }
-  .#{$point}-col-#{$i} > li:nth-of-type(#{$i}n+1){
+  .#{$point}-col-#{$columns} > li:nth-of-type(#{$columns}n+1){
     clear: both;
   }
-
 }
 
 //===================================================================================

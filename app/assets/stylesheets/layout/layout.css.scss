@@ -22,18 +22,14 @@
 //===================================================================================
 // Small default columns
 //===================================================================================
-@include col-("small", 2);
-@include col-("small", 3);
-@include col-("small", 4);
+@include col-("small");
 
 //===================================================================================
 // Medium columns
 //===================================================================================
 
 @include breakpoint(medium) {
-  @include col-("medium", 2);
-  @include col-("medium", 3);
-  @include col-("medium", 4);
+ @include col-("medium");
 }
 
 //===================================================================================
@@ -41,9 +37,7 @@
 //===================================================================================
 
 @include breakpoint(large) {
-  @include col-("large", 2);
-  @include col-("large", 3);
-  @include col-("large", 4);
+  @include col-("large");
 }
 
 
@@ -56,14 +50,18 @@
 // Small default block grid 
 //===================================================================================
 
-@include block-grid-("small", #{i});
+@include block-grid-("small", 2);
+@include block-grid-("small", 3);
+@include block-grid-("small", 4);
 
 //===================================================================================
 // Medium block grid 
 //===================================================================================
 
 @include breakpoint(medium) {
-  @include block-grid-("medium", #{i});
+  @include block-grid-("medium", 2);
+  @include block-grid-("medium", 3);
+  @include block-grid-("medium", 4);
 }
 
 //===================================================================================
@@ -71,5 +69,7 @@
 //===================================================================================
 
 @include breakpoint(large){
-  @include block-grid-("large", #{i});
+  @include block-grid-("large", 2);
+  @include block-grid-("large", 3);
+  @include block-grid-("large", 4);
 }
