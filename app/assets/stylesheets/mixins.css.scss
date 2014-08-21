@@ -15,9 +15,15 @@
 // Clearfix
 //===================================================================================
 
-@mixin clearfix() { *zoom:1;
-  &:before, &:after { content: ""; display: block; }
-  &:after { clear: both; }
+@mixin clearfix() { 
+  *zoom:1;
+    &:before, &:after { 
+      content: ""; 
+      display: block; 
+  }
+    &:after { 
+      clear: both; 
+  }
 }
 
 //===================================================================================
@@ -35,3 +41,20 @@
      @media (max-width: 400px){@content;}
    }
 }
+
+//===================================================================================
+// Blockgrid
+//===================================================================================
+
+@mixin block-grid-($blockSize) {
+.block-grid-#{$blockSize} > li {
+	width: (100% / $blockSize);
+	float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.block-grid-#{$blockSize} > li:nth-of-type("$blockSize"n+1){
+    clear: both;
+  }
+ }
