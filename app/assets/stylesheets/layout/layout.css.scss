@@ -29,14 +29,18 @@
 // Block grid 
 //===================================================================================
 
-@include breakpoint(small) {
-  @include block-grid-(2);
-}
+  @include block-grid-("small", 2);
+  @include block-grid-("small", 3);
+  @include block-grid-("small", 4);
 
 @include breakpoint(medium) {
-  @include block-grid-(3);
+  @include block-grid-("medium", 2);
+  @include block-grid-("medium", 3);
+  @include block-grid-("medium", 4);
 }
 
 @include breakpoint(large){
-  @include block-grid-(4);
+  @include block-grid-("large", 2);
+  @include block-grid-("large", 3);
+  @include block-grid-("large", 4);
 }

@@ -46,8 +46,8 @@
 // Blockgrid
 //===================================================================================
 
-@mixin block-grid-($blockSize) {
-.block-grid-#{$blockSize} > li {
+@mixin block-grid-($point, $blockSize) {
+.#{$point}-block-grid-#{$blockSize} > li {
 	width: (100% / $blockSize);
 	float: left;
     padding-left: 10px;
