@@ -55,5 +55,5 @@
   }
   .block-grid-#{$blockSize} > li:nth-of-type("$blockSize"n+1){
     clear: both;
-   }
+  }
 }
