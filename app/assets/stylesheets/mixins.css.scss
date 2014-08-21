@@ -48,13 +48,13 @@
 
 @mixin block-grid-($point, $blockSize) {
 .#{$point}-block-grid-#{$blockSize} > li {
-	width: (100% / $blockSize);
-	float: left;
-	padding-left: 10px;
-	padding-right: 10px;
+  width: (100% / $blockSize);
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .block-grid-#{$blockSize} > li:nth-of-type("$blockSize"n+1){
-    clear: both;
-  }
+  clear: both;
  }
+}
