@@ -1,30 +1,51 @@
 .container
   %h1 Home
-.row
-  - 12.times do |n|
-    .large-col-1.small-col-6
-      %img{:alt => "rails logo", :src => "/assets/railslogo.png"}/
+:css
+  .frame {
+    border: 1px solid black;
+    text-align: center;
+  }
+-#
+-# 2 columns sized 50%.
+-#
+.row.frame
+  %h1 2 columns 50% framed.
+  .large-col-6.medium-col-6.small-col-6
+    %p This is text
+  .large-col-6.medium-col-6.small-col-6
+    %p This is text
+    
 
-.row
-  .col-12
-    %img{:alt => "rails logo", :src => "/assets/railslogo.png"}/
+-#
+-# MAIN CONTENT AND SIDEBAR. 
+-# Shrunk sidebar on smaller devices.
+-#
+:css
+  .standout {
+    background: red;
+    padding: 5px;
+    text-align:center;
+  }
+
+.row.standout
+  %h1 Main content with sidebar.
+  .large-col-8.medium-col-10.small-col-11.frame
+    %p This is the main content.
+  .large-col-4.medium-col-2.small-col-1.frame
+    %p This is the sidebar.
 
 :css
   img {
     max-width: 100%;
   }
 
-.row
-  - 12.times do |n|
-    .col-1
-      %img{:alt => "rails logo", :src => "/assets/railslogo.png"}/
-.row
-  - 12.times do |n|
-    .col-1
-      %img{:alt => "rails logo", :src => "/assets/railslogo.png"}/
-
+-#
+-# BLOCK GRID. 
+-# On a large screen there are 4 blocks per row and the number gets smaller as the screen does.
+-#
 
 %ul.large-block-grid-4.medium-block-grid-3.small-block-grid-2
   - 12.times do |n|
     %li
       = image_tag "http://lorempixel.com/400/#{[*1..5].sample}00/sports/"
+      %p This is the image text.
