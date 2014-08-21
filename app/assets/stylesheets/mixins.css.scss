@@ -53,7 +53,7 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  .block-grid-#{$blockSize} > li:nth-of-type("$blockSize"n+1){
+  .#{$point}-block-grid-#{$blockSize} > li:nth-of-type("$blockSize"n+1){
     clear: both;
   }
 }
