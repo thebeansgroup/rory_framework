@@ -1,7 +1,3 @@
-html {
-  font-size: 1em;
-}
-
 body {
   background-color: $bodyColor;
   font-size: $baseFontSize;
@@ -123,16 +119,6 @@ td {
   padding: 1em;
 }
 
-//===================================================================================
-// Articles
-//===================================================================================
-
-article {
-  border: $articleBorder;
-  width: $articleWidth;
-  padding: $articlePadding;
-  margin: 0 auto;
-}
 
 //===================================================================================
 // Anchor elements.
@@ -161,11 +147,4 @@ mark {
   border-radius: $dataListBorderRadius;
   border: $dataListBorder;
   background: $clashColor;
-}
-
-
-
-
-.gradient {
-  background: $gradientBackground;
 }
