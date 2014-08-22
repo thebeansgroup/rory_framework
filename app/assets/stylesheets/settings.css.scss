@@ -9,7 +9,7 @@ $containerWidth: 100%;
 //===================================================================================
 // Base fonts
 //===================================================================================
-
+/* Sizing */
 $baseFontSize: 20px;
 $baseFontColor: #fb6225;
 $baseFontFamily: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
@@ -19,6 +19,13 @@ $h3FontSize: 1.999em;
 $h4FontSize: 1.414em;
 $smallFontSize: 0.707em;
 
+/* Font-weight */
+$fontLighter: lighter;
+$fontBolder: bolder;
+
+/* Shadow */
+$shadow: 0px 1px 3px black;
+
 //===================================================================================
 // Colors.
 //===================================================================================
@@ -26,6 +33,8 @@ $smallFontSize: 0.707em;
 $main-color: #aa6439;
 $secondary-color: #a13646;
 $p-color: #aa7f39;
+
+/* Opacity */
 $opacity: 0.5;
 
 
