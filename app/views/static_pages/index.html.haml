@@ -1,10 +1,22 @@
 .container
   %h1 Home
+  %hr
 :css
   .frame {
     border: 1px solid black;
     text-align: center;
   }
+
+-#
+-# Headings
+-#
+.row
+  %h1 H1 heading
+  %h2 H2 heading
+  %h3 H3 heading
+  %h4 H4 heading
+  %h5 H5 heading
+
 -#
 -# 2 columns sized 50%.
 -#
@@ -35,7 +47,7 @@
   .large-col-8.medium-col-8.small-col-9.frame
     %h4 This is the main content, framed.
     %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velitessecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  .large-col-4.medium-col-4.small-col-3.frame.font_small
+  .large-col-4.medium-col-4.small-col-3.frame.support
     %h4 Sidebar, framed with shrunk and bolder text.
     %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.
 
@@ -48,10 +60,33 @@
 -# BLOCK GRID. 
 -# On a large screen there are 4 blocks per row and the number gets smaller as the screen does.
 -#
+.row
+  %ul.large-block-grid-4.medium-block-grid-3.small-block-grid-2
+    %h2 Block grid of 12 photos of differing sizes. Displayed in rows of 4 for large screens, down to rows of 2 for the smallest breakpoint.
+    - 12.times do |n|
+      %li
+        %img{:alt => "sports pictures", :src =>"http://lorempixel.com/400/#{[*1..5].sample}00/sports/"}/
+        %p This is the image text.
+%hr
 
-%ul.large-block-grid-4.medium-block-grid-3.small-block-grid-2
-  %h2 Block grid of 12 photos of differing sizes. Displayed in rows of 4 for large screens, down to rows of 2 for the smallest breakpoint.
-  - 12.times do |n|
-    %li
-      = image_tag "http://lorempixel.com/400/#{[*1..5].sample}00/sports/"
-      %p This is the image text.
+.row
+  %h2 Figure, figurecaption.
+  %figure
+    %img{:alt => "rails logo", :src => "/assets/railslogo.png"}/
+    %figcaption This is the figcaption.
+%hr
+
+.row
+  %h2 Block quote.  
+  %blockquote{:cite => "http://studentbeans.com"}
+    %p This is a quote taken from studentbeans.
+%hr
+
+.row
+  %h2 Pre element.
+  %pre
+    = preserve "this     text\n  \t\taligns differently"
+%hr
+
+.row
+  %h2 

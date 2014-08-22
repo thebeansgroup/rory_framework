@@ -43,8 +43,27 @@ h4 {
   font-size: $h4FontSize;
 }
 
-small, .font_small {
+small, .support {
   font-size: $smallFontSize;
   font-weight: $fontBolder;
 }
 
+hr {
+  margin: 3em;
+  height: 1px;
+  color: $baseFontColor;
+}
+
+blockquote {
+  float: left;
+  color: black;
+  margin-left: 2em;
+}
+
+figcaption {
+  color: $main-color;
+}
+
+pre {
+  color: $clashColor;
+}
