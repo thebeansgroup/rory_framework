@@ -1,0 +1,147 @@
+html {
+  font-size: 1em;
+}
+
+body {
+  background-color: $bodyColor;
+  font-size: $baseFontSize;
+  font-family: $baseFontFamily;
+  font-weight: 400;
+  line-height: 1.45;
+  color: black;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1.3em;
+  color: $p-color;
+  opacity: $opacity;
+}
+
+//===================================================================================
+// Headers
+//===================================================================================
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: $h1FontSize;
+  color: $primary-color;
+  text-shadow: $shadow;
+}
+
+h2 {
+  font-size: $h2FontSize;
+  color: $secondary-color;
+}
+
+h3 {
+  font-size: $h3FontSize;
+}
+
+h4 {
+  font-size: $h4FontSize;
+}
+
+small, .support {
+  font-size: $smallFontSize;
+  font-weight: $fontBolder;
+}
+
+//===================================================================================
+// Hr
+//===================================================================================
+hr {
+  margin: 3em;
+  height: 1px;
+  color: $baseFontColor;
+}
+
+//===================================================================================
+// Block quote
+//===================================================================================
+blockquote {
+  float: left;
+  color: black;
+  margin-left: 2em;
+}
+
+//===================================================================================
+// Fig caption
+//===================================================================================
+figcaption {
+  color: $primary-color;
+}
+
+//===================================================================================
+// Pre
+//===================================================================================
+pre {
+  color: $clashColor;
+}
+
+
+
+//===================================================================================
+// Dl
+//===================================================================================
+dt {
+  font-size: $dtFontSize;
+  color: $dtColor;
+}
+
+dd {
+  font-size: $ddFontSize;
+  color: $ddColor;
+}
+
+//===================================================================================
+// Tables
+//===================================================================================
+table, tr, th, td {
+  border: $tableBorder;
+}
+table {
+  width: $tableWidth;
+  margin: 0 auto;
+}
+
+tr {
+  
+}
+
+th {
+  font-size: $tableHeadingFont;
+  color: $primary-color;
+}
+td {
+  background: $secondary-color;
+  padding: 1em;
+}
+
+//===================================================================================
+// Articles
+//===================================================================================
+
+article {
+  border: $articleBorder;
+  width: $articleWidth;
+  padding: $articlePadding;
+  margin: 0 auto;
+}
+
+//===================================================================================
+// Anchor elements.
+//===================================================================================
+
+
+
+
+
+.gradient {
+  background: $gradientBackground;
+}

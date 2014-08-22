@@ -70,23 +70,57 @@
 %hr
 
 .row
-  %h2 Figure, figurecaption.
+  %h2 figure, figurecaption.
   %figure
     %img{:alt => "rails logo", :src => "/assets/railslogo.png"}/
     %figcaption This is the figcaption.
 %hr
 
-.row
-  %h2 Block quote.  
+.row.gradient
+  %h2 block quote.  
   %blockquote{:cite => "http://studentbeans.com"}
     %p This is a quote taken from studentbeans.
 %hr
 
-.row
-  %h2 Pre element.
+.row.gradient
+  %h2 pre element.
   %pre
     = preserve "this     text\n  \t\taligns differently"
 %hr
 
 .row
-  %h2 
+  %h2 dl element.
+  %dl
+    %dt Name
+    %dd Rory
+    %dt Age
+    %dd 26
+%hr
+
+.row
+  %h2 table.
+  %table
+    %tr
+      %th 1st header
+      %td 1st data
+      %td 2nd data
+      %td 3rd data
+    %tr
+      %th 2nd header
+      %td 1st data
+      %td 2nd data
+      %td 3rd data
+%hr
+
+.row
+  %H1 Articles.
+  .large-col-6.medium-col-6.small-col-6
+    %h2 article 1.
+    %article
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  .large-col-6.medium-col-6.small-col-6
+    %h2 article 2.
+    %article
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+%hr
+  
