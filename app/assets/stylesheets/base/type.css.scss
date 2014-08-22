@@ -14,7 +14,7 @@ body {
 
 p {
   margin-bottom: 1.3em;
-  color: $p-color;
+  color: $pColor;
   opacity: $opacity;
 }
 
@@ -30,13 +30,13 @@ h1, h2, h3, h4 {
 h1 {
   margin-top: 0;
   font-size: $h1FontSize;
-  color: $primary-color;
+  color: $primaryColor;
   text-shadow: $shadow;
 }
 
 h2 {
   font-size: $h2FontSize;
-  color: $secondary-color;
+  color: $secondaryColor;
 }
 
 h3 {
@@ -74,7 +74,7 @@ blockquote {
 // Fig caption
 //===================================================================================
 figcaption {
-  color: $primary-color;
+  color: $primaryColor;
 }
 
 //===================================================================================
@@ -116,10 +116,10 @@ tr {
 
 th {
   font-size: $tableHeadingFont;
-  color: $primary-color;
+  color: $primaryColor;
 }
 td {
-  background: $secondary-color;
+  background: $secondaryColor;
   padding: 1em;
 }
 
@@ -138,7 +138,11 @@ article {
 // Anchor elements.
 //===================================================================================
 
-
+a {
+  color: $primaryColor;
+  text-shadow: $anchorShadow;
+  font-size: $anchorFontSize;
+}
 
 
 

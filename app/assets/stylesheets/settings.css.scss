@@ -21,6 +21,7 @@ $smallFontSize: 0.707em;
 $dtFontSize: 1.999em;
 $ddFontSize: 1.414em;
 $tableHeadingFont: 1.999em;
+$anchorFontSize: 1.999em;
 
 /* Font-weight */
 $fontLighter: lighter;
@@ -33,10 +34,10 @@ $shadow: 0px 1px 3px black;
 // Colors.
 //===================================================================================
 
-$primary-color: #aa6439;
-$secondary-color: #a13646;
+$primaryColor: #aa6439;
+$secondaryColor: #a13646;
 $bodyColor: white;
-$p-color: #aa7f39;
+$pColor: #aa7f39;
 $clashColor: #ff69b4;
 $dtColor: black;
 $ddColor: #ccc;
@@ -68,6 +69,11 @@ $articleWidth: 70%;
 $articleBorder: 4px dashed black;
 $articlePadding: 3em;
 
+//===================================================================================
+// Anchor tags
+//===================================================================================
+
+$anchorShadow: 0px 1px 2px black;
 
 
 //===================================================================================
