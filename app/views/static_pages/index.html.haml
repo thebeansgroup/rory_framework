@@ -70,26 +70,26 @@
 %hr
 
 .row
-  %h2 figure, figurecaption.
+  %h2 Figure, figurecaption.
   %figure
     %img{:alt => "rails logo", :src => "/assets/railslogo.png"}/
     %figcaption This is the figcaption.
 %hr
 
 .row.gradient
-  %h2 block quote.  
+  %h2 Block quote.  
   %blockquote{:cite => "http://studentbeans.com"}
     %p This is a quote taken from studentbeans.
 %hr
 
 .row.gradient
-  %h2 pre element.
+  %h2 Pre element.
   %pre
     = preserve "this     text\n  \t\taligns differently"
 %hr
 
 .row
-  %h2 dl element.
+  %h2 Dl element.
   %dl
     %dt Name
     %dd Rory
@@ -98,7 +98,7 @@
 %hr
 
 .row
-  %h2 table.
+  %h2 Table.
   %table
     %tr
       %th 1st header
@@ -115,19 +115,36 @@
 .row
   %H1 Articles.
   .large-col-6.medium-col-6.small-col-6
-    %h2 article 1.
+    %h2 Article 1.
     %article
       %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   .large-col-6.medium-col-6.small-col-6
-    %h2 article 2.
+    %h2 Article 2.
     %article
       %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+%hr
+
+.row
+  %h2 Highlight text.
+  %p
+  The &lt;mark&gt; element is used to
+  %mark highlight
+  text.
+%hr
+
+.row
+  %h2 Datalist, example with a choice of browsers.
+  %h4 Choose a browser from this list:
+%input.datalist__input{:list => "browsers"}/
+%datalist#browsers
+  %option{:value => "Chrome"}
+    %option{:value => "Firefox"}
+      %option{:value => "Internet Explorer"}
+        %option{:value => "Opera"}
+          %option{:value => "Safari"}
 %hr
 
 .row
   %h2 anchor tags.
   %a{:href => "#top"} Return to top
 %hr
-
-
-  

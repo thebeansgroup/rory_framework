@@ -144,6 +144,26 @@ a {
   font-size: $anchorFontSize;
 }
 
+//===================================================================================
+// Highlighted text.
+//===================================================================================
+
+mark {
+  border-radius: $markBorderRadius;
+  padding: 3px;
+}
+
+//===================================================================================
+// Data list.
+//===================================================================================
+
+.datalist__input {
+  border-radius: $dataListBorderRadius;
+  border: $dataListBorder;
+  background: $clashColor;
+}
+
+
 
 
 .gradient {
