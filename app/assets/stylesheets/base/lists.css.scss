@@ -1,20 +1,28 @@
-li {
-  display: block;
-  margin: 1em;
-  margin-left: 7em;
-  margin-right: 7em;
-  border-bottom: 1px solid #d3d3d3;
-  text-decoration: $liStyle;
-
+ul {
+  @include customLi;
 }
+
+ul.stars li:before {
+  content: url(star_yellow.png);
+  margin-right: 1em;
+}
+
+ul.stars li {
+  text-indent: 4em;
+  list-style: $liStyle;
+}
+
 
 nav {
   @include clearfix;
   background: $lightBlue;
+  margin-top: 1em;
   li {
     float: right;
     color: $secondaryColor;
-    padding-left: $liPaddingLeft;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0px;
     a {
       text-decoration: $liStyle;
       &:hover {

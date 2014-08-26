@@ -34,14 +34,9 @@
 -# MAIN CONTENT AND SIDEBAR. 
 -# Shrunk sidebar on smaller devices.
 -#
-:css
-  .standout {
-    background: #ccc;
-    padding: 5px;
-    text-align:center;
-  }
 
-.row.standout
+
+.row
   %h2 Main content with sidebar, background colour.
   %h3 Sidebar shrinks to less columns on a smaller screen.
   .large-col-8.medium-col-8.small-col-9.frame
@@ -115,27 +110,36 @@
 .row
   %h2 Highlight text.
   %p
-  The &lt;mark&gt; element is used to
-  %mark highlight
-  text.
+    The &lt;mark&gt; element is used to
+    %mark highlight
+    text.
 %hr
 
 .row
   %h2 Datalist, example with a choice of browsers.
   %h4 Choose a browser from this list:
-%input.datalist__input{:list => "browsers"}/
-%datalist#browsers
-  %option{:value => "Chrome"}
-    %option{:value => "Firefox"}
-      %option{:value => "Internet Explorer"}
-        %option{:value => "Opera"}
-          %option{:value => "Safari"}
-%hr
+%input#search.datalistBox{:autocomplete => "on", :list => "searchresults", :name => "search", :placeholder => "Browser", :type => "text"}
+  %datalist#searchresults
+    %option Chrome
+    %option Firefox
+    %option Internet explorer
+    %option Opera
+    %option Safari
+%hr  
 
 .row
+  %h2 Unordered lists.
   .large-col-6.medium-col-6.small-col-6
-    %h2 Unordered list.
+    %h3 Unordered list.
     %ul
+      %li Item 1.
+      %li Item 2.
+      %li Item 3.
+      %li Item 4.
+      %li Item 5.
+  .large-col-6.medium-col-6.small-col-6
+    %h3 Unordered list with stars(because why not)
+    %ul.stars
       %li Item 1.
       %li Item 2.
       %li Item 3.
