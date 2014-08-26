@@ -180,26 +180,24 @@
 .row
   %h2 Custom Link next to defualt.
   .linkCustom
-    %a{:href => root_path} Custom Link
-  %a{:href => root_path} Default Link
+    %a= link_to "Custom Link", root_path
+  %a= link_to "Default Link", root_path
 %hr
 
 .row
   %h2 Buttons.
   .large-col-3.medium-col-3.small-col-3
-    %button.primary.large Large Primary btn
+    %button.btn.primary.large Large Primary btn
   .large-col-3.medium-col-3.small-col-3
-    %button.secondary.large Large Secondary btn
+    %button.btn.secondary.large Large Secondary btn
   .large-col-3.medium-col-3.small-col-3
-    %button.light.medium Medium Light btn
+    %button.btn.light.medium Medium Light btn
   .large-col-3.medium-col-3.small-col-3
-    %button.dark.small Small Dark btn
-  
-    
-      
+    %button.btn.dark.small Small Dark btn
+  %hr
 
 .row
   %h2 Anchor tags.
-  %a{:href => "#top"} Return to top
+  %a= link_to "Return to top", "#top"
 %hr
 

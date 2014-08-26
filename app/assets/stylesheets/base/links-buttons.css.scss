@@ -10,9 +10,10 @@
 //===================================================================================
 // Buttons.
 //===================================================================================
-button {
+.btn {
 
   border-radius: $btnRadius;
+  padding: 1em;
 
   &.primary {
     background: $primaryBtnColor;
@@ -30,10 +31,10 @@ button {
     background: $darkBtnColor;
   }
   &.large {
-    width: 20em;
+    width: 25em;
   }
   &.medium {
-    width: 8em;
+    width: 10em;
   }
   &.small {
     width: 4em;
