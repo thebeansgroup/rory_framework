@@ -9,32 +9,15 @@
 //===================================================================================
 // Star list.
 //===================================================================================
+.starsList {
+  margin-left: 2em;
+}
 
 .starsList li:before {
   content: url(star_yellow.png);
   padding-right: 1em;
 }
 
-.starsList > li {
+.starsList li {
   text-indent: -2em;
 }
-
-
-//===================================================================================
-// Default nav
-//===================================================================================
-nav {
-  @include clearfix;
-  li {
-    float: right;
-    color: $secondaryColor;
-    a {
-      text-decoration: $liStyle;
-      &:hover {
-        color: $liHoverColor;
-      }
-    }
-  }
-}
-
-

@@ -148,7 +148,7 @@
       %li Item 5.
   .large-col-4.medium-col-4.small-col-4
     %h3 Unordered list with stars(because why not)
-    %ul.starsList.liClean{:style => "margin-left: 2em;"}
+    %ul.starsList.liClean
       %li Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.
       %li Item 2.
       %li Item 3.
@@ -180,8 +180,8 @@
 .row
   %h2 Custom Link next to defualt.
   .linkCustom
-    %a= link_to "Home custom link", root_path
-  %a= link_to "Home default link_to", root_path
+    %a= link_to "Custom link", root_path
+  %a= link_to "Default link", root_path
 %hr
 .row
   %h2 Anchor tags.

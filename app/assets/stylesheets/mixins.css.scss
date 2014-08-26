@@ -78,12 +78,10 @@
 
 @mixin customLinks(){
     margin-bottom: 2em;
-    background: $primaryColor;
     a {
     color: $lightBlue;
     &:hover {
       color: $secondaryColor;
-      background: $primaryColor;
     }
   }
 }
