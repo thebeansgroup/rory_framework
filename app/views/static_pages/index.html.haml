@@ -180,8 +180,8 @@
 .row
   %h2 Custom Link next to defualt.
   .linkCustom
-    %a= link_to "Custom Link", root_path
-  %a= link_to "Default Link", root_path
+    = link_to "Custom Link", root_path
+  = link_to "Default Link", root_path
 %hr
 
 .row
@@ -196,8 +196,10 @@
     %button.btn.dark.small Small Dark btn
   %hr
 
+
+
 .row
   %h2 Anchor tags.
-  %a= link_to "Return to top", "#top"
+  = link_to "Return to top", "#top"
 %hr
 
