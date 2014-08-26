@@ -66,12 +66,10 @@
 //===================================================================================
 
 @mixin customLi(){
-    float: left;
+    margin: 0em;
     list-style: none;
-    margin: 1em;
-    margin-left: 7em;
-    margin-right: 7em;
     text-decoration: none;
+
 }
 
 //===================================================================================
@@ -82,10 +80,10 @@
     margin-bottom: 2em;
     background: $primaryColor;
     a {
-    color: $secondaryColor;
+    color: $lightBlue;
     &:hover {
-      color: $lightBlue;
-      background: $secondaryColor;
+      color: $secondaryColor;
+      background: $primaryColor;
     }
   }
 }

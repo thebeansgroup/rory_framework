@@ -129,17 +129,26 @@
 
 .row
   %h2 Unordered lists.
-  .large-col-6.medium-col-6.small-col-6
-    %h3 Unordered list, cleared styles.
-    %ul.liClear
+  .large-col-4.medium-col-4.small-col-4
+    %h3 Unordered list with class '.liClean'.
+    %ul.liClean
       %li Item 1.
       %li Item 2.
       %li Item 3.
       %li Item 4.
       %li Item 5.
-  .large-col-6.medium-col-6.small-col-6
+  .large-col-4.medium-col-4.small-col-4
+    %h3 Unordered default.
+    %h4 (Unordered lists use cirle bullets by default, with a left margin of 2em.)
+    %ul
+      %li Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.
+      %li Item 2.
+      %li Item 3.
+      %li Item 4.
+      %li Item 5.
+  .large-col-4.medium-col-4.small-col-4
     %h3 Unordered list with stars(because why not)
-    %ul.starsList.liClear
+    %ul.starsList.liClean{:style => "margin-left: 2em;"}
       %li Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.
       %li Item 2.
       %li Item 3.
@@ -151,6 +160,7 @@
   %h2 Ordered lists.
   .large-col-6.medium-col-6.small-col-6
     %h3 Ordered list default.
+    %h4 (Ordered lists are numbered by default, with a left margin of 2em.)
     %ol
       %li Item 1.
       %li Item 2.
@@ -159,7 +169,7 @@
       %li Item 5.
   .large-col-6.medium-col-6.small-col-6
     %h3 Ordered list, cleared styles.
-    %ol.liClear
+    %ol.liClean
       %li Item 1.
       %li Item 2.
       %li Item 3.
@@ -168,10 +178,10 @@
 %hr
 
 .row
-  %h2 Custom Links. Cleared styles with added aCustom(custom Link style).
-  %ul.aCustom.liClear
-    %li= link_to "Home", root_path
-    %li= link_to "About", about_path
+  %h2 Custom Link next to defualt.
+  .linkCustom
+    %a= link_to "Home custom link", root_path
+  %a= link_to "Home default link_to", root_path
 %hr
 .row
   %h2 Anchor tags.
