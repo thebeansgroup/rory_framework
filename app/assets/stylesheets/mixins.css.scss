@@ -85,3 +85,27 @@
     }
   }
 }
+
+
+
+
+@mixin btn-($btnSize) {
+  .#{$btnSize}-btn- {
+
+  @if $btnSize == large {
+     width: 7em;
+   }
+  @else if $btnSize == medium {
+     width: 4em;
+   }
+  @else if $btnSize == small {
+     width: 2em;
+   }
+  }
+}
+
+
+
+
+
+

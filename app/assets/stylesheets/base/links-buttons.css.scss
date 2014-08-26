@@ -6,3 +6,36 @@
 .linkCustom {
     @include customLinks;
 }
+
+//===================================================================================
+// Buttons.
+//===================================================================================
+button {
+
+  border-radius: $btnRadius;
+
+  &.primary {
+    background: $primaryBtnColor;
+  }
+
+  &.secondary {
+    background: $secondaryBtnColor;
+  }
+
+  &.light {
+    background: $lightBtnColor;
+  }
+
+  &.dark {
+    background: $darkBtnColor;
+  }
+  &.large {
+    width: 20em;
+  }
+  &.medium {
+    width: 8em;
+  }
+  &.small {
+    width: 4em;
+  }
+}

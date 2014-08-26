@@ -148,7 +148,7 @@
       %li Item 5.
   .large-col-4.medium-col-4.small-col-4
     %h3 Unordered list with stars(because why not)
-    %ul.starsList.liClean
+    %ul.starsList
       %li Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.
       %li Item 2.
       %li Item 3.
@@ -180,9 +180,24 @@
 .row
   %h2 Custom Link next to defualt.
   .linkCustom
-    %a= link_to "Custom link", root_path
-  %a= link_to "Default link", root_path
+    %a{:href => root_path} Custom Link
+  %a{:href => root_path} Default Link
 %hr
+
+.row
+  %h2 Buttons.
+  .large-col-3.medium-col-3.small-col-3
+    %button.primary.large Large Primary btn
+  .large-col-3.medium-col-3.small-col-3
+    %button.secondary.large Large Secondary btn
+  .large-col-3.medium-col-3.small-col-3
+    %button.light.medium Medium Light btn
+  .large-col-3.medium-col-3.small-col-3
+    %button.dark.small Small Dark btn
+  
+    
+      
+
 .row
   %h2 Anchor tags.
   %a{:href => "#top"} Return to top

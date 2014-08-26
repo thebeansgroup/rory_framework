@@ -44,8 +44,6 @@ $dtColor: black;
 $ddColor: #ccc;
 
 
-$gradientBackground: linear-gradient(to right, #ffd8d8, #ffb4b4 55%, #d85959);
-
 /* Opacity */
 $opacity: 0.5;
 
@@ -97,4 +95,19 @@ $liHoverColor: white;
 
 $columns: 12;
 $column-gutter: 40px !default;
+
+//===================================================================================
+// Buttons
+//===================================================================================
+
+/* Button defaults */
+
+$btnRadius: 4px;
+
+/* Colors */
+
+$primaryBtnColor: #4486d6;
+$secondaryBtnColor: #ffd94b;
+$lightBtnColor: #ffeba0;
+$darkBtnColor: #ff6200;
 
