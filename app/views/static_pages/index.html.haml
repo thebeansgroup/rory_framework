@@ -130,8 +130,8 @@
 .row
   %h2 Unordered lists.
   .large-col-6.medium-col-6.small-col-6
-    %h3 Unordered list.
-    %ul
+    %h3 Unordered list, cleared styles.
+    %ul.liClear
       %li Item 1.
       %li Item 2.
       %li Item 3.
@@ -139,7 +139,27 @@
       %li Item 5.
   .large-col-6.medium-col-6.small-col-6
     %h3 Unordered list with stars(because why not)
-    %ul.stars
+    %ul.starsList.liClear
+      %li Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.Item 1.
+      %li Item 2.
+      %li Item 3.
+      %li Item 4.
+      %li Item 5.
+%hr
+
+.row
+  %h2 Ordered lists.
+  .large-col-6.medium-col-6.small-col-6
+    %h3 Ordered list default.
+    %ol
+      %li Item 1.
+      %li Item 2.
+      %li Item 3.
+      %li Item 4.
+      %li Item 5.
+  .large-col-6.medium-col-6.small-col-6
+    %h3 Ordered list, cleared styles.
+    %ol.liClear
       %li Item 1.
       %li Item 2.
       %li Item 3.
@@ -147,6 +167,12 @@
       %li Item 5.
 %hr
 
+.row
+  %h2 Custom Links.
+  %ul.aCustom.liClear
+    %li= link_to "Home", root_path
+    %li= link_to "About", about_path
+%hr
 .row
   %h2 Anchor tags.
   %a{:href => "#top"} Return to top

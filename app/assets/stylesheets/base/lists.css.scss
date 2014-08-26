@@ -1,36 +1,33 @@
-li {
+.liClear {
   @include customLi;
 }
 
-ul.stars li:before {
+.starsList li:before {
   content: url(star_yellow.png);
-  margin-right: 1em;
+  margin-right: 0.3em;
 }
 
-ul.stars li {
-  text-indent: 4em;
-  list-style: $liStyle;
+.starsList li {
+  text-indent: -2em;
+  text-align: left;
 }
 
 
 nav {
   @include clearfix;
-  background: $lightBlue;
-  margin-top: 1em;
   li {
     float: right;
     color: $secondaryColor;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin: 0px;
     a {
       text-decoration: $liStyle;
       &:hover {
         color: $liHoverColor;
-        }
       }
-      :last-child {
-        padding-right: 1em;
-    }
-  }
+   }
+}
+
+.aCustom {
+  li {
+    @include customLinks; 
+  } 
 }

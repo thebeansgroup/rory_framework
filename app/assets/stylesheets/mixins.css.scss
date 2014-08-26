@@ -66,11 +66,26 @@
 //===================================================================================
 
 @mixin customLi(){
-  li {
-    display: block;
+    float: left;
+    list-style: none;
     margin: 1em;
     margin-left: 7em;
     margin-right: 7em;
-    text-decoration: $liStyle;
+    text-decoration: none;
+}
+
+//===================================================================================
+// Custom links
+//===================================================================================
+
+@mixin customLinks(){
+    margin-bottom: 2em;
+    background: $primaryColor;
+    a {
+    color: $secondaryColor;
+    &:hover {
+      color: $lightBlue;
+      background: $secondaryColor;
+    }
   }
 }
