@@ -37,6 +37,7 @@ $shadow: 0px 1px 3px black;
 $primaryColor: #aa6439;
 $secondaryColor: #a13646;
 $bodyColor: white;
+$lightBlue: #cdd5f0;
 $pColor: #aa7f39;
 $clashColor: #ff69b4;
 $dtColor: black;
@@ -67,7 +68,7 @@ $tableBorder: 1px solid black;
 // Anchor tags
 //===================================================================================
 
-$anchorShadow: 0px 1px 2px black;
+$anchorShadow: 0px 1px 2px;
 
 //===================================================================================
 // Mark
@@ -83,10 +84,12 @@ $dataListBorderRadius: 4px;
 $dataListBorder: 2px solid pink;
 
 //===================================================================================
-//Links
+//List items
 //===================================================================================
 
-$linkColor: red;
+$liPaddingLeft: 1em;
+$liStyle: none;
+$liHoverColor: white;
 
 //===================================================================================
 // Columns

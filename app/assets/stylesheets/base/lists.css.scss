@@ -1,0 +1,28 @@
+li {
+  display: block;
+  margin: 1em;
+  margin-left: 7em;
+  margin-right: 7em;
+  border-bottom: 1px solid #d3d3d3;
+  text-decoration: $liStyle;
+
+}
+
+nav {
+  @include clearfix;
+  background: $lightBlue;
+  li {
+    float: right;
+    color: $secondaryColor;
+    padding-left: $liPaddingLeft;
+    a {
+      text-decoration: $liStyle;
+      &:hover {
+        color: $liHoverColor;
+        }
+      }
+      :last-child {
+        padding-right: 1em;
+    }
+  }
+}
