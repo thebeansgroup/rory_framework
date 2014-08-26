@@ -60,3 +60,52 @@
     clear: both;
   }
 }
+
+//===================================================================================
+// Clear list defaults and add custom.
+//===================================================================================
+
+@mixin customLi(){
+    margin: 0em;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+//===================================================================================
+// Custom links
+//===================================================================================
+
+@mixin customLinks(){
+    margin-bottom: 2em;
+    a {
+    color: $lightBlue;
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
+
+
+
+
+@mixin btn-($btnSize) {
+  .#{$btnSize}-btn- {
+
+  @if $btnSize == large {
+     width: 7em;
+   }
+  @else if $btnSize == medium {
+     width: 4em;
+   }
+  @else if $btnSize == small {
+     width: 2em;
+   }
+  }
+}
+
+
+
+
+
+

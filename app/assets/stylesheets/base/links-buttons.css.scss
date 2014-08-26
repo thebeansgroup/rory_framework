@@ -1,0 +1,42 @@
+
+//===================================================================================
+// Links
+//===================================================================================
+
+.linkCustom {
+    @include customLinks;
+}
+
+//===================================================================================
+// Buttons.
+//===================================================================================
+.btn {
+
+  border-radius: $btnRadius;
+  padding: 1em;
+
+  &.primary {
+    background: $primaryBtnColor;
+  }
+
+  &.secondary {
+    background: $secondaryBtnColor;
+  }
+
+  &.light {
+    background: $lightBtnColor;
+  }
+
+  &.dark {
+    background: $darkBtnColor;
+  }
+  &.large {
+    width: 25em;
+  }
+  &.medium {
+    width: 10em;
+  }
+  &.small {
+    width: 4em;
+  }
+}

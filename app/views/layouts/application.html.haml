@@ -6,9 +6,7 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-  %body.page-wrap
+  %body
     = render :partial => "layouts/header"
-    .container
-      = render :partial => "layouts/title"
     = yield
     = render :partial => "layouts/footer"
