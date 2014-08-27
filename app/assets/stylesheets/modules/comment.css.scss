@@ -1,29 +1,32 @@
+//===================================================================================
+// Main comment section
+//===================================================================================
+
 .comment {
   border-top: 5px solid yellow;
-  margin-left: 2em;
-  margin-right: 2em;
 }
+
+//===================================================================================
+// Comment contents, with additional comments nested within.
+//===================================================================================
 
 .comment__contents {
   overflow: auto;
 }
+
+//===================================================================================
+// Comment picture, floated to the left.
+//===================================================================================
+
 .comment__pic {
   float: left;
-  padding-right: 2em;
+  margin-right: 2em;
 }
 
-.comment__title {
-  h2 {
-    color: black;
-  } 
-}
+//===================================================================================
+// Comment text overflow so that the child comment doesn't wrap around the image.
+//===================================================================================
 
 .comment__text {
-  p{
-    
-    color: black;
-    padding-top: 0.5em;
-    font: 1.5em Tahoma;
-  }
+  overflow: auto;
 }
-
