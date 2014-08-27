@@ -63,24 +63,16 @@ $tableBorder: 1px solid black;
 
 
 //===================================================================================
-// Anchor tags
-//===================================================================================
-
-$anchorShadow: 0px 1px 2px;
-
-//===================================================================================
 // Mark
 //===================================================================================
 
 $markBorderRadius: 3px;
 
 //===================================================================================
-// Datalist
+// Links
 //===================================================================================
 
-$dataListBorderRadius: 4px;
-$dataListBorder: 2px solid pink;
-
+$linksFont: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 //===================================================================================
 //List items
 //===================================================================================
@@ -103,6 +95,26 @@ $column-gutter: 40px !default;
 /* Button defaults */
 
 $btnRadius: 4px;
+$btnBase: 10px;
+$btnBorder: 2px solid gray;
+$btnShadow: 0px 2px 3px;
+
+/* Button Visited */
+
+$btnBorderColorVisited: pink;
+$btnFontColorVisited: gray;
+
+/* Button Active */
+
+$btnShadowActive: 2px 3px 4px;
+
+/* Button Hover */
+
+$btnShadowHover: 2px 0px 3px;
+
+/* Button Disabled */
+$btnFontColorDisabled: gray;
+
 
 /* Colors */
 
@@ -110,4 +122,5 @@ $primaryBtnColor: #4486d6;
 $secondaryBtnColor: #ffd94b;
 $lightBtnColor: #ffeba0;
 $darkBtnColor: #ff6200;
+$btnFontColor: black;
 

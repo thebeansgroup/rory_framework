@@ -2,7 +2,12 @@
 //===================================================================================
 // Links
 //===================================================================================
-
+a {
+  @include defaultLinks;
+  &:hover {
+      color: $clashColor;
+    }
+}
 .linkCustom {
     @include customLinks;
 }
@@ -11,9 +16,37 @@
 // Buttons.
 //===================================================================================
 .btn {
-
+  display: inline-block;
   border-radius: $btnRadius;
-  padding: 1em;
+  overflow: hidden;
+  font-family: $baseFontFamily;
+  color: $btnFontColor;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: $btnShadow;
+  border: $btnBorder;
+  @include customLi;
+  max-width: 200px;
+
+  &:hover {
+    box-shadow: $btnShadowHover;
+  }
+
+  &:active {
+    box-shadow: $btnShadowActive;
+  }
+  
+  &:visited {
+    border: $btnBorderColorVisited;
+    color: $btnFontColorVisited;
+  }
+
+  &:disabled {
+    box-shadow: none;
+    border: none;
+    color: $btnFontColorDisabled;
+  }
+
 
   &.primary {
     background: $primaryBtnColor;
@@ -31,12 +64,14 @@
     background: $darkBtnColor;
   }
   &.large {
-    width: 25em;
+    padding: $btnBase * 2.5;
+    
   }
   &.medium {
-    width: 10em;
+    padding: $btnBase *1.5;
   }
   &.small {
-    width: 4em;
+    padding: $btnBase / 2;
   }
+  
 }
