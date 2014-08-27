@@ -2,7 +2,12 @@
 //===================================================================================
 // Links
 //===================================================================================
-
+a {
+  @include defaultLinks;
+  &:hover {
+      color: $clashColor;
+    }
+}
 .linkCustom {
     @include customLinks;
 }
@@ -35,7 +40,7 @@
     border: $btnBorderColorVisited;
     color: $btnFontColorVisited;
   }
-  
+
   &:disabled {
     box-shadow: none;
     border: none;
