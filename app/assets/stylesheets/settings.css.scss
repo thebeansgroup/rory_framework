@@ -75,12 +75,6 @@ $anchorFont: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Time
 
 $markBorderRadius: 3px;
 
-//===================================================================================
-// Datalist
-//===================================================================================
-
-$dataListBorderRadius: 4px;
-$dataListBorder: 2px solid pink;
 
 //===================================================================================
 //List items
@@ -107,6 +101,22 @@ $btnRadius: 4px;
 $btnBase: 10px;
 $btnBorder: 2px solid gray;
 $btnShadow: 0px 2px 3px;
+
+/* Button Visited */
+
+$btnBorderColorVisited: pink;
+$btnFontColorVisited: gray;
+
+/* Button Active */
+
+$btnShadowActive: 2px 3px 4px;
+
+/* Button Hover */
+
+$btnShadowHover: 2px 0px 3px;
+
+/* Button Disabled */
+$btnFontColorDisabled: gray;
 
 
 /* Colors */

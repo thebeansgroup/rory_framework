@@ -18,13 +18,30 @@
   color: $btnFontColor;
   font-size: 1em;
   text-align: center;
+  box-shadow: $btnShadow;
   border: $btnBorder;
   @include customLi;
   max-width: 200px;
 
-  &:active{
-    box-shadow: $btnShadow;
+  &:hover {
+    box-shadow: $btnShadowHover;
   }
+
+  &:active {
+    box-shadow: $btnShadowActive;
+  }
+  
+  &:visited {
+    border: $btnBorderColorVisited;
+    color: $btnFontColorVisited;
+  }
+  
+  &:disabled {
+    box-shadow: none;
+    border: none;
+    color: $btnFontColorDisabled;
+  }
+
 
   &.primary {
     background: $primaryBtnColor;
@@ -51,4 +68,5 @@
   &.small {
     padding: $btnBase / 2;
   }
+  
 }

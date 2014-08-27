@@ -187,31 +187,28 @@
 .row
   %h2 Anchor tags in buttons.
   .large-col-3.medium-col-3.small-col-3
-    .btn.large.primary
-      %a{:href => "/"} Large Primary Link
+    %a.btn.large.primary{:href => "/"} Large Primary Link
   .large-col-3.medium-col-3.small-col-3
-    .btn.medium.secondary
-      %a{:href => "/"} Medium Secondary Link Btn
+    %a.btn.medium.secondary{:href => "/"} Medium Secondary Link Btn
   .large-col-3.medium-col-3.small-col-3
-    .btn.small.light
-      %a{:href => "/"} Small Light Link Btn
+    %a.btn.small.light{:href => "/"} Small Light Link Btn
   .large-col-3.medium-col-3.small-col-3
-    .btn.large.dark
-      %a{:href => "/"} Large Dark Link
+    %a.btn.large.dark{:href => "/"} Large Dark Link
 %hr
 
 .row
   %h2 List items in buttons.
-  .btn.large.primary
-    %li Large Primary Li
-  .btn.medium.secondary
-    %li Medium Secondary Li
-  .btn.small.light
-    %li Small Light Li
-  .btn.large.dark
-    %li Large Dark Li
+  %li.btn.large.primary Large Primary Li
+  %li.btn.medium.secondary Medium Secondary Li
+  %li.btn.small.light Small Light Li
+  %li.btn.large.dark Large Dark Li
 %hr
 
+.row
+  .large-col-6.medium-col-6.small-col-6
+    %h2 Disabled button.
+    %button.btn.large.primary{:disabled => ""} disabled button
+%hr
 
 .row
   %h2 Anchor tags.
