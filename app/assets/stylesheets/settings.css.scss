@@ -67,6 +67,7 @@ $tableBorder: 1px solid black;
 //===================================================================================
 
 $anchorShadow: 0px 1px 2px;
+$anchorFont: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;;
 
 //===================================================================================
 // Mark
@@ -103,6 +104,10 @@ $column-gutter: 40px !default;
 /* Button defaults */
 
 $btnRadius: 4px;
+$btnBase: 10px;
+$btnBorder: 2px solid gray;
+$btnShadow: 0px 2px 3px;
+
 
 /* Colors */
 
@@ -110,4 +115,5 @@ $primaryBtnColor: #4486d6;
 $secondaryBtnColor: #ffd94b;
 $lightBtnColor: #ffeba0;
 $darkBtnColor: #ff6200;
+$btnFontColor: black;
 

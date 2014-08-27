@@ -116,18 +116,6 @@
 %hr
 
 .row
-  %h2 Datalist, example with a choice of browsers.
-  %h4 Choose a browser from this list:
-%input#search.datalistBox{:autocomplete => "on", :list => "searchresults", :name => "search", :placeholder => "Browser", :type => "text"}
-  %datalist#searchresults
-    %option Chrome
-    %option Firefox
-    %option Internet explorer
-    %option Opera
-    %option Safari
-%hr  
-
-.row
   %h2 Unordered lists.
   .large-col-4.medium-col-4.small-col-4
     %h3 Unordered list with class '.liClean'.
@@ -194,8 +182,35 @@
     %button.btn.light.medium Medium Light btn
   .large-col-3.medium-col-3.small-col-3
     %button.btn.dark.small Small Dark btn
-  %hr
+%hr
 
+.row
+  %h2 Anchor tags in buttons.
+  .large-col-3.medium-col-3.small-col-3
+    .btn.large.primary
+      %a{:href => "/"} Large Primary Link
+  .large-col-3.medium-col-3.small-col-3
+    .btn.medium.secondary
+      %a{:href => "/"} Medium Secondary Link Btn
+  .large-col-3.medium-col-3.small-col-3
+    .btn.small.light
+      %a{:href => "/"} Small Light Link Btn
+  .large-col-3.medium-col-3.small-col-3
+    .btn.large.dark
+      %a{:href => "/"} Large Dark Link
+%hr
+
+.row
+  %h2 List items in buttons.
+  .btn.large.primary
+    %li Large Primary Li
+  .btn.medium.secondary
+    %li Medium Secondary Li
+  .btn.small.light
+    %li Small Light Li
+  .btn.large.dark
+    %li Large Dark Li
+%hr
 
 
 .row

@@ -123,11 +123,11 @@ td {
 // Anchor elements.
 //===================================================================================
 
-a {
-  color: $primaryColor;
-  text-shadow: $anchorShadow;
-  font-size: $anchorFontSize;
-}
+a{
+  font-family: $anchorFont;
+  @include customLi;
+
+  }
 
 //===================================================================================
 // Highlighted text.

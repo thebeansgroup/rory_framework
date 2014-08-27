@@ -11,9 +11,20 @@
 // Buttons.
 //===================================================================================
 .btn {
-
+  display: inline-block;
   border-radius: $btnRadius;
-  padding: 1em;
+  overflow: hidden;
+  font-family: $baseFontFamily;
+  color: $btnFontColor;
+  font-size: 1em;
+  text-align: center;
+  border: $btnBorder;
+  @include customLi;
+  max-width: 200px;
+
+  &:active{
+    box-shadow: $btnShadow;
+  }
 
   &.primary {
     background: $primaryBtnColor;
@@ -31,12 +42,13 @@
     background: $darkBtnColor;
   }
   &.large {
-    width: 25em;
+    padding: $btnBase * 2.5;
+    
   }
   &.medium {
-    width: 10em;
+    padding: $btnBase *1.5;
   }
   &.small {
-    width: 4em;
+    padding: $btnBase / 2;
   }
 }
