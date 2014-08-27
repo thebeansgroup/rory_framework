@@ -1,0 +1,32 @@
+.comment, .child_comment {
+  border-top: 5px solid yellow;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.child_comment {
+  float: right;
+  width: 75%;
+}
+
+.comment__pic {
+  float: left;
+  padding-right: 2em;
+ 
+}
+
+.comment__title {
+  h2 {
+    color: black;
+  } 
+}
+
+.comment__text {
+  p{
+    overflow: auto;
+    color: black;
+    padding-top: 0.5em;
+    font: 1.5em Tahoma;
+  }
+}
+
